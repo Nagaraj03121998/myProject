@@ -27,6 +27,7 @@ public class LoginTest extends BaseTest{
         Assert.assertTrue(loginPage.isLoginPageDisplayed()," User login to the page successfully");
         ExtentTestManager.getTest().log(Status.PASS, "User successfully logged in to the application");
         loginPage.searchOrgName(ConfigReader.getProperty("orgname"));
+        Assert.assertTrue(loginPage.isOrgPageDisplayed(),"Organization page should be displayed");
         loginPage.shadowUserLogin(ConfigReader.getProperty("shadowUser"));
     }
 }

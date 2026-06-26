@@ -26,6 +26,10 @@ public class LoginPage {
         return driver.findElement(LoginPageLocators.LOGIN_PAGE).isDisplayed();
     }
 
+    public boolean isOrgPageDisplayed() {
+        return driver.findElement(LoginPageLocators.ORG_PAGE).isDisplayed();
+    }
+
     public void login(String username, String password) {
         enterUsername(username);
         enterPassword(password);
