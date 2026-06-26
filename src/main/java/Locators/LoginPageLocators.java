@@ -9,4 +9,5 @@ public class LoginPageLocators {
     public static final By LOGIN_PAGE   = By.xpath("//span[text()='Administration System']");
     public static final By ORG_NAME   = By.xpath("//input[@id='admin_searchText']");
     public static final By SEARCH_BUTTON   = By.xpath("//button[text()='Search']");
+    public static final By ORG_PAGE   = By.xpath("//span[text()='ecolab']");
 }
